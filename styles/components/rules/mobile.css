@@ -14,10 +14,16 @@
     margin: 23px 0 0;
   }
 
+  .rules__image-wrapper::before {
+    width: 50%;
+    height: 50%;
+  }
+
   .rules__image {
     display: block;
     width: 100%;
     max-width: 300px;
+    height: 100%;
     margin: 0 auto;
     margin-top: 28px;
     margin-bottom: 35px;
