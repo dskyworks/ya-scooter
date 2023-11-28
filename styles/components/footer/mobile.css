@@ -1,0 +1,18 @@
+/* Mobile */
+
+@media (width < 768px) {
+  .footer {
+    padding-bottom: 90px;
+  }
+
+  .body__footer {
+    margin-top: 70px;
+  }
+
+  .footer__info {
+    font-size: 10px;
+  }
+
+  .footer__link {
+  }
+}

@@ -1,0 +1,62 @@
+/* Mobile */
+
+@media (width < 768px) {
+  .main__events {
+    margin-top: 65px;
+  }
+
+  .events__title {
+    max-width: 570px;
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+
+  .events__description {
+    margin: 22px 0 0;
+    font-size: 16px;
+  }
+
+  .swiper-container {
+    display: block;
+    padding: 0 15px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+    margin-top: 43px;
+  }
+
+  .swiper-slide > img {
+    width: 100%;
+    border-radius: 48px;
+  }
+
+  .swiper-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .swiper-btn-prev,
+  .swiper-btn-next {
+    width: 48px;
+    height: 48px;
+    background-color: #eeeeee;
+    background-image: url('../../../assets/swiper-button.svg');
+    background-size: contain;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .swiper-btn-prev {
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}

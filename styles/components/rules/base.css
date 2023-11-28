@@ -1,0 +1,17 @@
+/* Base */
+
+.rules {
+}
+
+.rules__title {
+  margin: 0;
+  line-height: 1;
+}
+
+.rules__description {
+  font-weight: 500;
+  line-height: 1, 2;
+}
+
+.button {
+}

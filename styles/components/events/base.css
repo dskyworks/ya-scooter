@@ -1,0 +1,23 @@
+/* Base */
+
+.events__title {
+  margin: 0;
+  line-height: 1;
+}
+
+.events__description {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.events__gallery {
+  display: none;
+}
+
+.swiper-container {
+  display: none;
+}
+
+.swiper-buttons {
+  display: none;
+}

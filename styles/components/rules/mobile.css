@@ -1,0 +1,35 @@
+/* Mobile */
+
+@media (width < 768px) {
+  .main__rules {
+    margin-top: 68px;
+  }
+
+  .rules__title {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+
+  .rules__description {
+    margin: 23px 0 0;
+  }
+
+  .rules__image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 35px;
+    transform: rotate(347deg);
+  }
+
+  .rules__image--visible {
+    display: none;
+  }
+
+  .rules__button {
+    display: block;
+    margin-top: 26px;
+  }
+}

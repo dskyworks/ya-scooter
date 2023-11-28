@@ -1,0 +1,50 @@
+/* Desktop */
+
+@media (width >= 768px) {
+  .benefits {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  .benefits__title {
+    width: 640px;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -1.12px;
+  }
+
+  .benefits__list {
+    grid-template: auto auto / minmax(min-content, 362px) minmax(
+        min-content,
+        431px
+      );
+    justify-content: space-between;
+    gap: 61px 20px;
+    margin: 40px 0 0;
+  }
+
+  .benefits__item {
+    padding-top: 99px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    background-position: top left;
+  }
+
+  .benefits-item--start {
+    background-image: url('/assets/benefits-start.svg');
+  }
+
+  .benefits-item--friends {
+    background-image: url('/assets/benefits-friends.svg');
+    background-size: 94px;
+  }
+
+  .benefits-item--pause {
+    background-image: url('/assets/benefits-pause.svg');
+  }
+
+  .benefits-item--switch {
+    background-image: url('/assets/benefits-switch.svg');
+  }
+}

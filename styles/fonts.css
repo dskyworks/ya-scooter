@@ -1,0 +1,17 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'YS-Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'YS-Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'YS-Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff');
+}

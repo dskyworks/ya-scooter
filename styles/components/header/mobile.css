@@ -1,0 +1,116 @@
+/* Mobile */
+
+@media (width < 768px) {
+  .header {
+    padding: 32px 32px 282px;
+  }
+
+  .header__container {
+    position: relative;
+  }
+
+  .header__container::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../assets/label@1x.png');
+    background-size: cover;
+    animation: label-spin 60s infinite reverse linear;
+  }
+
+  .header__wrapper {
+    max-width: 311px;
+  }
+
+  .logo__image {
+    width: 112px;
+    height: 32px;
+  }
+
+  .header__title {
+    width: 220px;
+    margin: 24px 0 0;
+    font-size: 36px;
+    letter-spacing: -0.72px;
+  }
+
+  .header__description {
+    margin: 24px 0 0;
+    font-size: 18px;
+    letter-spacing: 0.05px;
+  }
+
+  .header__price {
+    font-size: 18px;
+    letter-spacing: 0.05px;
+  }
+
+  .highlighted-price {
+  }
+
+  .highlighted-price__actual {
+  }
+
+  .highlighted-price__old {
+  }
+
+  .button {
+  }
+
+  .header__button {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    z-index: 5;
+    width: 100%;
+    max-width: 310px;
+    transform: translate(-50%);
+  }
+
+  .header__img {
+    align-self: center;
+    margin-top: 18px;
+    transform: translate(-5px);
+    object-fit: cover;
+  }
+
+  .header__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (width < 620px) {
+    .header {
+      background-position: center bottom -15px, calc(50% + 100px) top, center,
+        center, center;
+      background-size: 346px, 0, auto, auto, auto;
+    }
+
+    .header__container::before {
+      right: calc(50% + -6px);
+      bottom: -226px;
+    }
+  }
+
+  @media (width >= 620px) and (width < 768px) {
+    .header {
+      padding: 32px 32px 0;
+      background-position: right 15% top 20px, calc(50% + 100px) top, center,
+        center, center;
+      background-size: 346px, 0, auto, auto, auto;
+    }
+
+    .header__image::after {
+      top: 148px;
+      left: calc(50% - 77px);
+    }
+
+    .header__container::before {
+      top: 138px;
+      right: calc(15% + 93px);
+    }
+  }
+}

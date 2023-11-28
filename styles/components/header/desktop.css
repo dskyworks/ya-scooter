@@ -1,0 +1,80 @@
+/* Desktop */
+
+@media (width >= 768px) {
+  .header {
+    position: relative;
+    padding: 123px 32px 120px;
+    overflow-x: hidden;
+    background-position: calc(50% + 240px) 40px, calc(50% + 100px) -40px, center,
+      center, center;
+    background-size: 825px 719px, auto, auto, auto, auto;
+  }
+
+  .header__container {
+    position: relative;
+    max-width: 906px;
+    margin: 0 auto;
+  }
+
+  .header__container::before {
+    content: '';
+    position: absolute;
+    top: 266px;
+    left: calc(50% + 55px);
+    width: 210px;
+    height: 210px;
+    background: url('../../../assets/label@1x.png') no-repeat center;
+    background-size: contain;
+    animation: label-spin 60s infinite reverse linear;
+  }
+
+  .header__wrapper {
+    z-index: 1;
+    align-self: start;
+  }
+
+  .logo {
+    display: flex;
+    width: 176px;
+  }
+
+  .logo__image {
+    flex-grow: 2;
+    width: 176px;
+    height: 50px;
+  }
+
+  .header__title {
+    width: 430px;
+    margin: 63px 0 0;
+    font-size: 72px;
+    letter-spacing: -1.45px;
+  }
+
+  .header__description {
+    width: 430px;
+    margin: 30px 0 0;
+    font-size: 24px;
+    letter-spacing: 0.05px;
+  }
+
+  .header__price {
+    font-size: 24px;
+  }
+
+  .highlighted-price__actual {
+    padding: 0 12px;
+    line-height: 1.35;
+  }
+
+  .highlighted-price__old {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  .header__button {
+    margin-top: 36px;
+    padding: 18px 48px;
+    font-size: 24px;
+  }
+}

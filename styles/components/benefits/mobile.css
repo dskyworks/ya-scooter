@@ -1,0 +1,44 @@
+/* Mobile */
+
+@media (width < 768px) {
+  .benefits {
+    margin-top: 59px;
+  }
+
+  .benefits__title {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.64px;
+  }
+
+  .benefits__list {
+    row-gap: 24px;
+    margin-top: 26px;
+    font-weight: 500;
+    list-style: none;
+  }
+
+  .benefits__item {
+    display: flex;
+    align-items: center;
+    min-height: 83px;
+    padding-left: 99px;
+    line-height: 1.2;
+  }
+
+  .benefits-item--start {
+    background-image: url('/assets/benefits-start-mobile.svg');
+  }
+
+  .benefits-item--friends {
+    background-image: url('/assets/benefits-friends-mobile.svg');
+  }
+
+  .benefits-item--pause {
+    background-image: url('/assets/benefits-pause-mobile.svg');
+  }
+
+  .benefits-item--switch {
+    background-image: url('/assets/benefits-switch-mobile.svg');
+  }
+}

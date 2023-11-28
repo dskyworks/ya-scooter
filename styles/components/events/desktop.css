@@ -1,0 +1,133 @@
+/* Desktop */
+
+@media (width >= 768px) {
+  .events {
+  }
+
+  .events__container {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  .main__events {
+    margin-top: 123px;
+  }
+
+  .events__title {
+    max-width: 800px;
+    font-size: 48px;
+    letter-spacing: -0.96px;
+  }
+
+  .events__description {
+    width: 440px;
+    margin: 35px 0 0;
+    font-size: 24px;
+  }
+
+  .events__gallery {
+    display: flex;
+    gap: 10px;
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0 90px;
+    transition: gap 1s ease-in-out;
+  }
+
+  .gallery__group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 1s ease, gap 1s ease-in-out;
+  }
+
+  .gallery__image-wrapper {
+    position: relative;
+  }
+
+  .gallery__image-wrapper > img {
+    width: 100%;
+    max-width: 456px;
+    border-radius: 64px;
+  }
+
+  .events__gallery
+    .gallery__group:nth-child(1)
+    .gallery__image-wrapper:nth-child(1)::before,
+  .events__gallery
+    .gallery__group:nth-child(2)
+    .gallery__image-wrapper:nth-child(1)::before,
+  .events__gallery
+    .gallery__group:nth-child(2)
+    .gallery__image-wrapper:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 320px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(-14px 51px 30px #d2bdff);
+  }
+
+  .events__gallery
+    .gallery__group:nth-child(1)
+    .gallery__image-wrapper:nth-child(1)::before {
+    top: 0;
+    left: -114px;
+    width: 170px;
+    height: 190px;
+    background-image: url('../../../assets/marker@1x.png');
+    filter: drop-shadow(-14px 51px 30px #d2bdff);
+    transition: transform 1s ease;
+  }
+
+  .events__gallery
+    .gallery__group:nth-child(2)
+    .gallery__image-wrapper:nth-child(1)::before {
+    top: -100px;
+    right: -60px;
+    width: 153px;
+    height: 153px;
+    background-image: url('../../../assets/lines@2x.png');
+  }
+
+  .events__gallery
+    .gallery__group:nth-child(2)
+    .gallery__image-wrapper:nth-child(2)::before {
+    right: -70px;
+    bottom: -30px;
+    width: 200px;
+    height: 171px;
+    background-image: url('../../../assets/cup@2x.png');
+    filter: drop-shadow(-14px 51px 30px #d2bdff);
+  }
+
+  @media (width >= 930px) {
+    .events__gallery {
+      gap: 30px;
+    }
+
+    .gallery__group {
+      gap: 20px;
+    }
+
+    .gallery__group:nth-child(1) {
+      transform: rotate(2deg);
+    }
+
+    .gallery__group:nth-child(2) {
+      transform: translateY(-210px) rotate(2deg);
+    }
+  }
+
+  @media (width >= 768px) and (width < 930px) {
+    .events__gallery
+      .gallery__group:nth-child(1)
+      .gallery__image-wrapper:nth-child(1)::before {
+      transform: translateX(5px);
+    }
+  }
+}
